@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lalezar&family=Tajawal:wght@300;400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1000px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+nav .logo{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+nav .logo i{
+    color: #6e0aef;
+    padding-left: 0,75rem;
+}
+
+nav .fa-bars{
+display: none;
+}
+
+nav .logo h4{
+    font-family: 'Lalezar', cursive;  
+}
+
+nav .nav-items{
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav .nav-items .nav-item{
+    padding: 0 1rem;
+}
+nav .nav-link{
+    text-decoration: none;
+    color: #4e547e;
+    font-size: 1.4rem;
+}
+
+nav .nav-link:hover{
+    color: #6e0aef;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background-color: #f8f7fc;
+}
+
+.hero-section{
+    max-width: 1366px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% auto;
+    padding: 0 5rem;
+  
+}
+
+.hero-section .content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-section h4{
+    color: #403874;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .content h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p{
+    color: rgb(28, 28, 28);
+    font-size: 1.3rem;
+}
+
+.hero-section p span{
+    color: #6e0aef;
+}
+
+.btn{
+    width: 8rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.75rem 1.5rem ;
+    background-color: #6e0aef;
+}
+
+.btn:hover{
+    background-color: #403874;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+/* FEATURES SECTION */
+
+
+section.features{
+    padding: 2rem 0;
+    background-color: #f8f7fc;
+
+}
+
+section.features .features-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-section h4{
+    color: #403874;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.features-section .qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section .qualities .quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.features-section .qualities .quality:hover{
+    border: 2px solid #6e0aef;
+}
+
+.qualities .quality i{
+    font-size: 2rem ;
+    color: #6e0aef;
+    margin-bottom: 1rem;
+}
+
+.qualities .quality h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.qualities .quality p{
+    font-size: 1.2rem;
+    text-align: center;
+    color:#4e547e
+}
+
+/* PHONES SECTION */
+
+.newest-phones{
+    padding-top: 5rem;
+}
+
+.newest-phones .phones-section{
+    max-width: 1366px;
+    margin: 0% auto;
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.phones-section h4{
+color: #6e0aef;
+font-size: 1.6rem;
+margin-bottom: 2rem;
+}
+
+.phones-section .phones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+.phones .phone{
+    margin: 2rem 0;
+    max-width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone img{
+    margin-bottom: 1rem;
+
+}
+
+.phone img:hover{
+    scale: 1.1;
+}
+
+.phone h3{
+    font-size: 1.6rem;
+}
+
+.phones-section button{
+    width: 15rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+
+/* FOOTER SECTION */
+
+footer{
+background-color: #f8f7fc;
+height: 15vh;
+margin-top: 5rem;
+padding: 2rem 0;
+
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.footer-section p{
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+
+.footer-section .socials{
+    margin-bottom: 1rem;
+}
+
+
+ .footer-section .socials i{ 
+    padding:0rem 1rem ;
+    font-size: 1.6rem
+ }
+
+.footer-section .socials i:hover{
+    color: #6e0aef;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESING */
+
+@media (max-width:960px){
+    *{
+        font-size: 80%;
+    }
+}
+    
+
+
+@media (max-width:800px){
+    *{
+       text-align: center;
+    }
+    .hero img{
+        display: none;
+    }
+    .hero-section{
+        align-items: center;
+        padding: 1rem 0;
+        width: 50%;
+       
+    }
+.hero .btn{
+    align-self: center;
+
+}
+.hero .content{
+    margin-top: 2rem;
+}
+.features-section .qualities{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.features .features-section{
+    align-items: center;
+}
+
+
+
+}
+   
+@media (max-width:833px){
+.phones-section{
+    align-items: center;
+
+}
+
+.phones-section .phones{
+grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media (max-width:500px){
+    .phones-section{
+        align-items: center;
+    
+    }
+    
+    .phones-section .phones{
+    grid-template-columns: 1fr ;
+    }
+    
+    }
+
+    @media (max-width:570px){
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+        
+nav .fa-bars{
+display: block;
+font-size: 3rem;
+}
+nav .nav-items{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: #403874;
+    padding: 2rem 0;
+    display: none;
+
+    }
+
+    nav .nav-items.active{
+        display: flex;
+    }
+
+nav .nav-items .nav-item{
+    margin: 1rem 0;
+
+}
+nav .nav-items .nav-item a{
+    color: #fff;
+}
+}
